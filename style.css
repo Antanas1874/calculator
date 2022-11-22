@@ -1,0 +1,113 @@
+@font-face{
+    font-family:'digital-7';
+    src: url('digital-7.regular.ttf');
+   }
+@font-face{
+    font-family:'timeBomb-font';
+    src: url('ticking-timebomb-bb.regular.ttf');
+   }
+
+html{
+  background-image: linear-gradient(to bottom right, #4dadfc, #7aef44, #e1ec48);
+
+}
+
+body {
+  justify-content: center;
+  display: flex;
+
+}
+
+.main {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  padding: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input1{
+    font-family: "timeBomb-font", "digital-7", Courier;
+    width: 400px;
+    height: 102px;
+    font-size: 100px;
+    text-align: right;
+    caret-color: transparent !important;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.input1:focus{
+    outline: none;
+}
+
+.container{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button{
+    font-family: "timeBomb-font", "digital-7", Courier;
+    font-size: 48px;
+    width: 94px;
+    height: 94px;
+    flex: 1 auto;
+    margin: 5px;
+}
+
+.button {
+  background-color: #cf245f;
+  background-image: linear-gradient(to bottom right, #fcd34d, #ef4444, #ec4899);
+  border: 0;
+  border-radius: .25rem;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "timeBomb-font", "digital-7", Courier;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.75rem; /* 28px */
+  padding: 1rem 1.25rem;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover {
+  background-color: #380a1a;
+  background-image: linear-gradient(to bottom right, #7e6821, #962f2f, #9b3265);
+}
+
+.button:active {
+  background-color: #380a1a;
+  background-image: linear-gradient(to bottom right, #afb15d, #925b5b, #af8298);
+}
+
+@media (min-width: 1024px) {
+  .button {
+    font-size: 1.5rem; /* 24px */
+    padding: 1rem 1.5rem;
+    line-height: 2rem; /* 32px */
+  }
+}
+
+@media (max-width: 1024px) {
+  #button-2{
+    padding-top:28px;
+  }
+}
+
+#button-2{
+    font-size: 26px;
+}
